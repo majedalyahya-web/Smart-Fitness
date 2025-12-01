@@ -1,0 +1,744 @@
+<?php
+ob_start();
+require_once 'connection.php';
+?>
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Smart Fitness</title>
+    
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+ 
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="main_section" id="home">
+        <div class="agile-banner_nav">
+
+            <nav class="navbar navbar-default">
+                <div class="navbar-header navbar-left">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1>
+                        <a class="navbar-brand" href="home.php">Fsmart
+                            <span style="right: -37px;"> itness</span>
+                        </a>
+                    </h1>
+
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <nav class="link-effect-2" id="link-effect-2">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="home.php" class="effect-3">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="effect-3 scroll">About</a>
+                            </li>
+                            <li>
+                                <a href="#services" class="effect-3 scroll">specialization</a>
+                            </li>
+                            
+                            <li>
+                                  <a href="#explore" class="effect-3 scroll">Explore</a>
+                            </li>
+                             <li>
+                                 <a href="#gallery" class="effect-3 scroll">Gallery</a>
+                             </li>
+
+                              <li>
+                                   <a href="#plans" class="effect-3 scroll">Plans</a>
+                              </li>
+                              <li>
+                                   <a href="#coach" class="effect-3 scroll">Coach</a>
+                              </li>
+                                
+                            <li>
+                                <a href="#contacts" class="effect-3 scroll">contact</a>
+                            </li>
+                            
+                            <li>
+                                <a href="login.php" class="effect-3 scroll">login</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+            <div class="clearfix"> </div>
+        </div>
+        <!-- banner slider -->
+        <div class="slider">
+            <ul class="rslides" id="slider">
+                <li>
+                    <div class="w3ls-banner-image  w3ls-banner-image1">
+                        <div class="layer">
+                            <div class="banner-text">
+                                <h3>commit</h3>
+                                <p> to be fit</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3ls-banner-image  w3ls-banner-image2">
+                        <div class="layer">
+                            <div class="banner-text">
+                                <h3>Fitness</h3>
+                                <p>is a lifestyle</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3ls-banner-image  w3ls-banner-image3">
+                        <div class="layer">
+                            <div class="banner-text">
+                                <h3>strive</h3>
+                                <p> for progress</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- //Slider -->
+    <!-- about-->
+    <div class="about-top section" id="about">
+        <div class="container">
+            <div class="w3l-about-top-head">
+                <div class="col-md-6 about-left text-center">
+                    <h5 class="main-title">introducing</h5>
+                    <h6 class="txt">smart fitness</h6>
+                    <p>we explore your hidden potential</p>
+                </div>
+                <div class="col-md-6 about-right">
+                    <h5>The FitnessClub is a multi-level facility that houses an expansive selection of equipment,
+                        the latest in group exercise classes, and resources for a complete wellness experience.</h5>
+                    <p>We provide a friendly, welcoming atmosphere for all members for all fitness levels from beginners to the PRO athletes.  
+                        Whether your passion is, cardio, weight training, bodybuilding, powerlifting, CrossFit, or functional training; we have all the 
+                        equipment and necessary machines you need for results.
+Come train with us!.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //about -->
+    <!-- about-bottom-grid -->
+    <div class="section about-bottomgrid">
+        <div class="container">
+            <div class="about-bot-grid-sec">
+                <div class="about-middle-pos">
+                    <h2>smart fitness </h2>
+                    <p>strive for progress</p>
+                </div>
+                <div class="about-section">
+                    <div class="col-md-4 col-sm-6  abg1">
+
+                    </div>
+                    <div class="col-md-8 col-sm-6 wthree-sec-about">
+                        <h4 class="bot-grid1">commit to be fit</h4>
+                        <p class="bot-gridtxt">We have an amazing and dedicated staff skilled in the art of coaching. Welcome to the family.</p>
+                    </div>
+                    <div class="clearfix"> </div>
+
+                </div>
+                <div class="col-md-8  col-sm-6 wthree-sec-about about-pos-btm">
+                    <h4 class="bot-grid-about">focus on being happy</h4>
+                    <p>Using our Plans, we'll guide you through our proven system of creating a healthier, happier and 
+                        more confident version of yourself without boring workouts, or fad diets
+Because we believe fitness should enhance your life, rather than take away from it- every Transformation starts with an in-depth look at 
+where you currently are, and creates an achievable path to where you want to be. Whether that's ditching the mid-afternoon energy slump so you can
+be active with your kids after school.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 abg2">
+                </div>
+
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //about-bottom-grid-->
+    <!--services -->
+    <div class="explore-grid text-center section" id="services">
+        <div class="container">
+            <h3 class="title1">specialization</h3>
+            <div class="services-head">
+                <div class="w3_services-top">
+                    <div class="services-grid">
+                        <img src="images/z2.png" alt="" />
+                        <h4>Weight Training</h4>
+                        <p>From bodybuilding to powerlifting and everything in between, the Fitness Factory has the equipment to help you reach your goals.</p>
+                    </div>
+                </div>
+                <div class="services-middle">
+                    <div class="col-md-3 col-sm-4 col-xs-4 services-grid s3">
+                        <img src="images/z3.png" alt="" />
+                        <h4>General Fitness</h4>
+                        <p>If your goals are to improve your overall health and wellness, we have everything you need.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-4  col-xs-4 services-img-grid">
+                        <img src="images/service1.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-sm-4  col-xs-4 services-grid s3">
+                        <img src="images/z4.png" alt="" />
+                        <h4>Functional Training</h4>
+                        <p>With 60 feet of turf with a sled, stackable plyometric boxes, weighted medicine balls, battle ropes, squat racks, and deadlift platforms.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="w3_services-top">
+                    <div class="services-grid">
+                        <img src="images/z5.png" alt="" />
+                        <h4>CrossFit</h4>
+                        <p>Workout tips, warm-up guidance, lesson plans, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//services -->
+    <!-- explore -->
+    <div class="services text-center section" id="explore">
+        <h3 class="title1">explore</h3>
+        <div class="sub-div">
+            <div class="exp-grid">
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/bodybuilding.jpg" alt="" width="250px" height="300px"/>
+                    <h4 class="explore-title">Body Building</h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/boxing.png" alt="" width="250px" height="300px"/>
+                    <h4 class="explore-title">Boxing</h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/MMA.png" alt="" width="250px" height="300px"/>
+                    <h4 class="explore-title">MMA</h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/p2.png" alt="" width="250px" height="300px"/>
+                    <h4 class="explore-title">fitness</h4>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="exp-grid">
+                <div class="ab1 w3_agile-about-grid1" >
+                    <img src="images/yoga.jpg" alt="" width="250px" height="300px" />
+                    <h4 class="explore-title">yoga</h4>
+                </div>
+                
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/karati.png" alt=""  width="250px" height="300px" />
+                    <h4 class="explore-title">Karati</h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/taekwondo.jpg" alt="" width="250px" height="300px" />
+                    <h4 class="explore-title">Taekwondo</h4>
+                </div>
+                <div class="ab1 w3_agile-about-grid1">
+                    <img src="images/p3.png" alt="" width="250px" height="300px" />
+                    <h4 class="explore-title">diet guide</h4>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //explore -->
+    <!-- Stats -->
+    <div class="stats">
+        <div class="layer-stats">
+            <div class="container section ">
+                <div class="col-md-3">
+                    <h4 class="stat-title text-center">we
+                        <span>explore</span>your hidden
+                        <span>potential</span>
+                    </h4>
+                </div>
+                <div class="col-md-9 stat-info">
+                    <div class="col-sm-6 col-xs-6 stats-grid text-center">
+                        <div class="w3-stats-icon">
+                            <span class="fa fa-shield" aria-hidden="true"></span>
+                        </div>
+                        <div class="stats-right">
+                            <h6>professional trainers</h6>
+                            <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='736' data-delay='.5' data-increment="1">343</div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 stats-grid text-center">
+                        <div class="w3-stats-icon">
+                            <span class="fa fa-bookmark-o" aria-hidden="true"></span>
+                        </div>
+                        <div class="stats-right">
+                            <h6>gold medals</h6>
+                            <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='780' data-delay='.5' data-increment="1">780</div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6 col-xs-6 stats-grid text-center">
+                        <div class="w3-stats-icon">
+                            <span class="fa fa-external-link" aria-hidden="true"></span>
+                        </div>
+                        <div class="stats-right">
+                            <h6>skilled trainers</h6>
+                            <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='630' data-delay='.5' data-increment="1">630</div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 stats-grid text-center">
+                        <div class="w3-stats-icon">
+                            <span class="fa fa-users" aria-hidden="true"></span>
+                        </div>
+                        <div class="stats-right">
+                            <h6>happy clients</h6>
+                            <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='900' data-delay='.5' data-increment="1">1000</div>
+
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //Stats -->
+    <!-- gallery -->
+    <div class="gallery section" id="gallery">
+        <div class="container">
+            <h3 class="title1">Gallery</h3>
+            <div class="gallery_grids">
+                <div class="col-xs-4 agile-gallery_grid_main">
+                    <div class="gallery-img-grid gallery_grid1 hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/g1.jpg" class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum">
+                                <figure>
+                                    <img src="images/g1.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/g2.jpg" class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum">
+                                <figure>
+                                    <img src="images/g2.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/t3.jpg" class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum">
+                                <figure>
+                                    <img src="images/g3.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 agile-gallery_grid_main">
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/t1.jpg" class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum">
+                                <figure>
+                                    <img src="images/t1.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/t3.jpg" class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum">
+                                <figure>
+                                    <img src="images/t3.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 agile-gallery_grid_main">
+                    <div class="gallery-img-grid gallery_grid1 hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/g1.jpg" class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum">
+                                <figure>
+                                    <img src="images/g4.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/g2.jpg" class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum">
+                                <figure>
+                                    <img src="images/g5.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-img-grid hover14 column">
+                        <div class="gallery_effect">
+                            <a href="images/g3.jpg" class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum">
+                                <figure>
+                                    <img src="images/g6.jpg" alt=" " class="img-responsive" />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //gallery -->
+    <!--  plane-->
+    <div class="section " id="plans">
+        <div class="container">
+            <h3 class="title1">plans</h3>  
+            <div class="sub-div">
+                <div class="col-md-4 col-sm-4  plan-grid  text-center">
+                    <ul class="price-plan">
+                        <li class="price-type">Beginner</li>
+                        <li class="price-tag"></li>
+                    </ul>
+                    <ul class="price-list">
+                        <li>personal trainer</li>
+                        <li>diet guide</li>
+                        <li>get supplement</li>
+                        <li>advanced fitness</li>
+                    </ul>
+                    <div class="price1-btn">
+                        <a href="login.php">Register now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4  plan-grid  text-center">
+                    <ul class="price-plan">
+                        <li class="price-type">professional</li>
+                        <li class="price-tag"></li>
+                    </ul>
+                    <ul class="price-list">
+                        <li>personal trainer</li>
+                        <li>diet guide</li>
+                        <li>get supplement</li>
+                        <li>advanced fitness</li>
+                    </ul>
+                    <div class="price1-btn">
+                        <a href="login.php">Register now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4  plan-grid  text-center">
+                    <ul class="price-plan">
+                        <li class="price-type">advanced</li>
+                        <li class="price-tag"></li>
+                    </ul>
+                    <ul class="price-list">
+                        <li>personal trainer</li>
+                        <li>diet guide</li>
+                        <li>get supplement</li>
+                        <li>advanced fitness</li>
+                    </ul>
+                    <div class="price1-btn">
+                        <a href="login.php">Register now</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- // plane -->
+    
+    <!-- team-->
+    
+           <div class="team text-center" id="coach">
+                    <div class="team-layer">
+            <h3 class="title">Expert Coachs</h3>
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        
+    <?php 
+    $query = "SELECT * from coach where cid!=1 ";
+    $result = mysqli_query($con,$query);
+    while($row=mysqli_fetch_array($result)){
+    
+    
+  
+    ?>
+    
+        
+             
+                
+                        <li>
+                            <div class="col-md-6 col-sm-6 w3_agile-team-grid ">
+                                <img src="<?php echo "images/". $row['image']; ?>" alt=" " class="img-responsive" />
+                                <h5><?php echo $row['fname']." ".$row['lname']; ?>
+                                    <span style="color:red;font-size: 30px;font-style:italic;"><?php echo $row['activityname'] ?></span>
+                                </h5>
+                                <p>With my support, we’ll work together to reach heights you never thought were possible. I am a fully qualified trainer that offers 
+                                    undivided attention of our sessions to work toward delivering results that can change your life.</p>
+                                <ul class="social_list">
+                                    <li>
+                                        <a href="#" class="facebook">
+                                            <span class="fa fa-facebook" aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="twitter">
+                                            <span class="fa fa-twitter" aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dribble">
+                                            <span class="fa fa-dribbble" aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="vimeo">
+                                            <span class="fa fa-vimeo" aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                            <div class="clearfix"></div>
+
+                        </li>
+                    
+    
+    <?php }
+    ob_end_flush();?>
+                        </ul>
+    
+        
+                </div>
+           
+                <div><footer class="section footer-classic context-dark bg-image" style="background: #2d3246;"  id="contacts">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+                <div class="pr-xl-4"><img class="brand-logo-light" src= "images/f12.jpg" alt="" width="400" height="250">
+                <p>The FitnessClub is a multi-level facility that houses an expansive selection of equipment, the latest in group exercise 
+                    classes, and resources for a complete wellness experience.</p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2021</span><span> </span><span>FitnessClub</span><span> - </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Contacts</h2> &nbsp;
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>Azmi Street, Tripoli, Lebanon</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">FitnessClub@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="tel:#">+961 76 246 347</a> <span>or</span> <a href="tel:#">+961 70 246 347</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#services">Blog</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#plans">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer></div>
+                  </section>
+                </div>
+    </div>
+    <!-- //team -->
+     
+    <!-- modal -->
+    <div class="modal about-modal fade" id="myModal1" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">fitness club</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-info">
+                        <img src="images/g2.jpg" alt="" class="img-responsive" />
+                        <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio
+                            eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque
+                            pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa.
+                            Nam id metus id tellus ultrices ullamcorper. Cras tempor massa luctus, varius lacus sit amet,
+                            blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+    
+    <!-- footer -->
+    
+    <div class="footer-main text-center">
+        <div class="footer-grid">
+         <a href="https://www.facebook.com"> 
+                <span class="fa fa-facebook-official icon" aria-hidden="true"></span>
+                <h6>like on facebook</h6>
+            </a>
+        </div>
+        <div class="footer-grid">
+            <a href="https://www.twitter.com">
+                <span class="fa fa-twitter-square icon" aria-hidden="true"></span>
+                <h6>follow on twitter</h6>
+            </a>
+        </div>
+        <div class="footer-grid">
+            <a href="https://www.youtube.com">
+                <span class="fa fa-youtube-square icon" aria-hidden="true"></span>
+                <h6>watch on youtube</h6>
+            </a>
+        </div>
+        <div class="footer-grid">
+            <a href="#contact" class="scroll">
+                <span class="fa fa-question-circle icon" aria-hidden="true"></span>
+                <h6>Any qusetions?</h6>
+            </a>
+        </div>
+        </div>
+       
+        
+        
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-copy text-center">
+                <p>© 2021 Fitness Club. All rights reserved 
+                   
+                </p>
+            </div>
+        </div>
+
+        </div>
+<!-- //footer -->
+
+
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    
+    
+    <!-- banner Slider script  -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider, #slider1").responsiveSlides({
+                auto: true,
+                nav: false,
+                speed: 1500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>
+    <!-- //banner Slider-JavaScript -->
+    <!-- Team FlexSlider -->
+    <script defer src="js/jquery.flexslider.js"></script>
+    <script>
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!-- End- Flexslider-script -->
+    
+    <style>
+        .context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+
+    </style>
+   
+   
+</body>
+
+</html>
+
